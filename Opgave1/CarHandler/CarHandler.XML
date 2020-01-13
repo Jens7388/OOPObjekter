@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CarHandler</name>
+    </assembly>
+    <members>
+        <member name="T:CarHandler.Car">
+            <summary>
+            Represents a Car with properties and methods.
+            Best used in WPF projects.
+            </summary>
+        </member>
+        <member name="P:CarHandler.Car.Make">
+            <summary>
+            The make of the car
+            </summary>
+        </member>
+        <member name="P:CarHandler.Car.Model">
+            <summary>
+            The model of the car
+            </summary>
+        </member>
+        <member name="P:CarHandler.Car.ProductionYear">
+            <summary>
+            The production year of the car
+            </summary>
+        </member>
+        <member name="P:CarHandler.Car.Color">
+            <summary>
+            The color of the car
+            </summary>
+        </member>
+        <member name="M:CarHandler.Car.#ctor(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Represents a car with the given parameters as properties
+            </summary>
+            <param name="make">The make of the car - e.g. Ford</param>
+            <param name="model">The model of the car - e.g. Mustang</param>
+            <param name="productionYear">The production year - e.g. 1987</param>
+            <param name="color">The paint color of the car - e.g. red</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">productionYear represents a number lower than 1886, or greater than the current year.</exception>
+        </member>
+        <member name="M:CarHandler.Car.GetInfo">
+            <summary>
+            Returns all the information of the car as a string.
+            </summary>
+            <returns>The string representation of all the information of the car</returns>
+        </member>
+        <member name="M:CarHandler.Car.StartCar">
+            <summary>
+            A method trying to start the car.
+            </summary>
+            <returns>Returns true if the car did start, otherwise false.</returns>
+        </member>
+        <member name="M:CarHandler.Car.ToString">
+            <summary>
+            Returns a string representation of the car in the format
+            Make Model (ProductionYear)
+            </summary>
+            <returns>The string representation of the car</returns>
+        </member>
+    </members>
+</doc>
